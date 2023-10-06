@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180x180.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-32x32.png">
+  <link rel="mask-icon" href="/images/favicon-180x180.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=LXGWBright-Regular:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yize.blog","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.11.1","exturl":false,"sidebar":{"position":"left","display":"remove","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":null,"post_body":null,"coll_header":null,"sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Some tips and tricks I learned through job hunting with AI, from revising resume to tailoring to jobs to preparing for interviews.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ChatGPT Prompts - Job Hunting">
+<meta property="og:url" content="https://yize.blog/20231006/index.html">
+<meta property="og:site_name" content="From Yize">
+<meta property="og:description" content="Some tips and tricks I learned through job hunting with AI, from revising resume to tailoring to jobs to preparing for interviews.">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-10-06T21:29:32.467Z">
+<meta property="article:modified_time" content="2023-10-06T22:12:49.152Z">
+<meta property="article:author" content="Yize Shen">
+<meta property="article:tag" content="Yize Shen, Yize, Sean Shen, Carnegie Mellon University">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://yize.blog/20231006/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://yize.blog/20231006/","path":"20231006/","title":"ChatGPT Prompts - Job Hunting"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>ChatGPT Prompts - Job Hunting | From Yize</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="From Yize" type="application/atom+xml">
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fas fa-code-branch fa-fw"></i>Archives</a></li><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-now"><a href="/now/" rel="section"><i class="fa fa-clock fa-fw"></i>Now</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://yize.blog/20231006/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Yize Shen">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="From Yize">
+      <meta itemprop="description" content="What's going on inside Yize's mind">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="ChatGPT Prompts - Job Hunting | From Yize">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          ChatGPT Prompts - Job Hunting
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+  
+
+      <time title="Created: 10-06-2023 14:29:32" itemprop="dateCreated datePublished" datetime="2023-10-06T14:29:32-07:00">10-06-2023</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>Some tips and tricks I learned through job hunting with AI, from revising resume to tailoring to jobs to preparing for interviews.</p>
+<h2 id="I-Revise-Resume"><a href="#I-Revise-Resume" class="headerlink" title="I. Revise Resume"></a>I. Revise Resume</h2><h3 id="1-1-Base-prompt"><a href="#1-1-Base-prompt" class="headerlink" title="1.1 Base prompt"></a>1.1 Base prompt</h3><p>Have ready:</p>
+<ul>
+<li>The role in mind you want to apply for: PM, SWE, Design, Marketing etc</li>
+<li>A list of experience you had, with bullet points explaining what you did</li>
+</ul>
+<pre><code class="yaml">Act as an experienced tech industry recruiter. I'm a university senior targeting PM roles and new grad positions for the upcoming recruiting season. Upon submitting my resume content, please review it, rate it on a scale of 10, provide the reasons for your rating, and offer specific suggestions for improvement.
+
+Here is my resume content:
+RESUMECONTENTGOESHERE</code></pre>
+
+<p>What we did here is a standard prompting method introduced by Elavis Saravia, role, context, input and output:</p>
+<ul>
+<li>‘act as a experienced recruiter’ - identify role they are playing</li>
+<li>‘university student looking for new grad positions’ - tell about basic context and background</li>
+<li>‘i will subimt my resume’ - identify input</li>
+<li>‘rate it based on 10 and give suggestions’ - identify output and quantifying result</li>
+</ul>
+<h3 id="1-2-Polish-content"><a href="#1-2-Polish-content" class="headerlink" title="1.2 Polish content"></a>1.2 Polish content</h3><p>A good resume content tends to consist of:</p>
+<ul>
+<li>strong action verb openings</li>
+<li>XYZ format, ‘I have accomplished X, by the measure of Y, that resulted in Z’</li>
+<li>Very clear and detailed success metrics</li>
+</ul>
+<p>So given this, a few examples that we can do after the base prompt:</p>
+<pre><code class="yaml">Please polish the following content to ensure all bullet points under my experiences start with unique, strong action verbs, I will attach a few example below:
+- Spearheaded
+- Executed
+- Revolutionized
+- Pioneered
+- Engineered
+- Cultivated
+- Optimized
+- Amplified</code></pre>
+
+<pre><code class="yaml">Please transform the given content into the format: 'I have accomplished X by the measure of Y that resulted in Z’.</code></pre>
+
+<pre><code class="yaml">Please identify any sections in the provided content that lack a success metric. Suggest potential metrics where missing and inquire for additional information if needed.</code></pre>
+
+<h2 id="II-Apply-Openings"><a href="#II-Apply-Openings" class="headerlink" title="II. Apply Openings"></a>II. Apply Openings</h2><h3 id="2-1-Base-prompt"><a href="#2-1-Base-prompt" class="headerlink" title="2.1 Base prompt"></a>2.1 Base prompt</h3><p>Have ready:</p>
+<ul>
+<li>the job listing</li>
+<li>your resume content in txt</li>
+</ul>
+<pre><code class="yaml">Act as an experienced recruiter, analyze the job description provided. Identify potential challenges the company might be facing based on the description, and list the top 3 skills essential for success in this role.
+
+Here is the job description:
+JOBDESCRIPTIONGOESHERE</code></pre>
+
+<h3 id="2-1-Tailor-resume"><a href="#2-1-Tailor-resume" class="headerlink" title="2.1 Tailor resume"></a>2.1 Tailor resume</h3><p>Now that we have the summary of the job description, we can use it to tailor our resume:</p>
+<pre><code class="yaml">Adjust my resume to target the ROLE at COMPANY. My objective is to get through the AI resume screening by highlighting pertinent experiences and incorporating keywords from the job description. Here's my current resume for modification:
+
+Here is my resume:
+RESUMECONTENTGOESHERE</code></pre>
+
+<p>As a pro tip, it’s also a good idea to let ChatGPT list out the difference and reasoning behind in a table:</p>
+<pre><code class="yaml">Great, now create a three-column table. In the first column, list the original content; in the second, the revised content; and in the third, provide an explanation for the changes made.</code></pre>
+
+<h3 id="2-2-Write-cover-letter"><a href="#2-2-Write-cover-letter" class="headerlink" title="2.2 Write cover letter"></a>2.2 Write cover letter</h3><p>Cover letters helps one to stand out by showing the extra effort, we can reduce the time by using ChatGPT.</p>
+<pre><code class="yaml">Using the expertise of a seasoned cover letter writer, craft a cover letter for the specified role and company. Ensure the letter meets the following criteria:
+- Highlights relevant work experience aligning with the job description for that particular PM role.
+- Affirms familiarity with the product either through use or in-depth research, indicating genuine interest beyond just applying.
+- Remains concise, with a limit of 150 words, composed of brief, detail-rich paragraphs.
+
+For context, here's my current resume:
+RESUMECONTENTGOESHERE</code></pre>
+
+<p>Now this is a generic template, if you already have something in mind, another way is to attach the template and let ChatGPT follow it.</p>
+<pre><code class="yaml">Act as a master cover letter writer. Based on the research we have done above, write three divergent cover letters based on the below content, following the template that I provide.
+
+### cover letter template
+
+Hi there:
+
+I’m a huge fan of [product]. I use it for [user case].
+
+I put together this brief product speclet relevant to this role:
+
+[product proposal]
+
+I would love to build features like that.
+
+Let’s chat?
+
+### cover letter template example
+
+Hi there:
+
+I’m a huge fan of Robinhood. I use it to buy all my stocks.
+
+I put together this brief product speclet relevant to this core investing PM role:
+
+**Automated Portfolio Rebalancing**
+- **Problem to solve:** As a user, it’s hard to maintain my Robinhood account to my desired portfolio weights. For instance, in the recent bad run of bond funds, I haven’t been able to easily sell equities to buy more bonds.
+- **Solution:** Build an portfolio re-balancing feature that allows you to identify target percentages for certain tickers or slices (group of tickers).
+- **Expected outcome:**
+  - Increase in AUM from investors who are interested in maintaining a balanced allocation - based on my friend group, probably around 40% - of around 15-20% this year. So about 3-4% in additional AUM.
+  - Increase in trading fees due to more trades. Estimate about 4 more trades a year for each of these users (which appears to be about 12% increase based on your latest FQ results). So that’s a trading fee revenue increase of ~$48M.
+
+I would love to build features like that at Robinhood.
+
+Let’s chat?
+</code></pre>
+
+<h2 id="III-Prepare-Interview"><a href="#III-Prepare-Interview" class="headerlink" title="III. Prepare Interview"></a>III. Prepare Interview</h2><h3 id="3-1-Base-prompt"><a href="#3-1-Base-prompt" class="headerlink" title="3.1 Base prompt"></a>3.1 Base prompt</h3><p>Generally through an interview, our goal is to show our understanding of the company and how we are a good fit.</p>
+<pre><code class="yaml">Act as a recruiter from COMPANY. I am a senior at university applying for a role at your company. I will pose questions about the company, and your task is to provide insights that will aid in my interview preparation. Confirm your comprehension by responding with 'Yes’.</code></pre>
+
+<h3 id="3-2-Learn-about-company-x2F-interviewer"><a href="#3-2-Learn-about-company-x2F-interviewer" class="headerlink" title="3.2 Learn about company &#x2F; interviewer"></a>3.2 Learn about company &#x2F; interviewer</h3><p>To learn more about the company:</p>
+<ul>
+<li>the company’s history, mission, culture</li>
+<li>company’s competitors, and the industry as a whole</li>
+<li>your interviewer</li>
+</ul>
+<p>Keeping these in mind, a few prompt we can use:</p>
+<pre><code class="yaml">Provide essential details about COMPANY's history, performance, and vision that would be beneficial to mention during my interview.</code></pre>
+
+<pre><code class="yaml">What are the current trends in the tech industry that I should be aware of for my upcoming interview.</code></pre>
+
+<pre><code class="yaml">[Have ready a pdf/text version of interviewer’s linkedin]
+
+Here is my interviewer’s LinkedIn profile, please give me a highlight of their career.</code></pre>
+
+<h3 id="3-3-Learn-about-how-myself-tailor-towards-the-company"><a href="#3-3-Learn-about-how-myself-tailor-towards-the-company" class="headerlink" title="3.3 Learn about how myself tailor towards the company"></a>3.3 Learn about how myself tailor towards the company</h3><p>Now assume the above has being generated, we can follow up by relating this to our own experience :)</p>
+<pre><code class="yaml">Considering the company's mission, history, performance, and culture, please advise me on how to tailor my approach for the interview to align with their objectives. I'll attach my resume below for reference.
+
+Here is my resume:
+RESUMECONTENTGOESHERE
+</code></pre>
+
+<pre><code class="yaml">Provide a list of the top 10 questions typically asked for the specified role at this company. Then, based on the resume content I'll attach below for reference, outline how you would recommend answering these questions to align with the company's mission.
+
+Here is my resume:
+RESUMECONTENTGOESHERE
+</code></pre>
+
+<h3 id="3-4-Let-ChatGPT-generate-behavioral-responses-for-you"><a href="#3-4-Let-ChatGPT-generate-behavioral-responses-for-you" class="headerlink" title="3.4 Let ChatGPT generate behavioral responses for you"></a>3.4 Let ChatGPT generate behavioral responses for you</h3><p>As a more advance trick, you can let ChatGPT generate responses for you given your experience.</p>
+<pre><code class="yaml">As ChatGPT, you'll be participating in an interview simulation for the position of (Position) at (Company). I'll provide you with your Resume in an upcoming message. Following that, you'll receive the interview questions along with guidelines on how to respond. Please confirm your understanding, and don't hesitate to share any assumptions you make at each step or request clarification if anything seems unclear.
+
+(put down the material for job and the resume content)
+
+The focus of this interview will be on your soft skills. When answering questions, be clear and concise, using everyday language. There are no right or wrong answers; feel free to create convincing responses that an interviewer would appreciate, even if they are fictional. However, ensure your answers align with the experiences mentioned in your resume. When asked about a specific event, consider the interviewer's goal and craft a narrative demonstrating the skills they're seeking for the (Position). Guidance will be provided for each question. We'll proceed one question at a time, and once you've answered satisfactorily, the next question will be presented. Please confirm your understanding and let me know if you have any questions.
+</code></pre>
+
+<h2 id="IV-Tips-and-Tricks"><a href="#IV-Tips-and-Tricks" class="headerlink" title="IV. Tips and Tricks"></a>IV. Tips and Tricks</h2><h3 id="4-1-Chain-of-thought-prompting"><a href="#4-1-Chain-of-thought-prompting" class="headerlink" title="4.1 Chain of thought prompting"></a>4.1 Chain of thought prompting</h3><p>Simple trick to make the generated resposne more accurate: add ‘<strong>Take a deep breath and think through this step by step</strong>’ at the begining of the prompt.</p>
+<p>There are a few papers that explains why this works, in short:</p>
+<ol>
+<li>Chatbot-like models are statistical language models predicting sequentially based on statistical patterns in their training data.</li>
+<li>When the data contains logic, the models statistically learn to present logical responses.</li>
+<li>Many hypothetical computations happen during inference that we don’t fully understand yet. For a problem involving steps A-&gt;B-&gt;C, many intermediates happen.</li>
+<li>Prompting step-by-step thinking ensures full logical chains (A-&gt;B-&gt;C) run without skipped assumptions, yielding the right result.</li>
+</ol>
+<p>References:<br><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2205.11916">Large Language Models are Zero-Shot Reasoners</a><br><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2309.03409.pdf">Google DeepMind - Large Language Models as Optimizers</a></p>
+<h3 id="4-2-ChatGPT-generated-the-prompt"><a href="#4-2-ChatGPT-generated-the-prompt" class="headerlink" title="4.2 ChatGPT generated the prompt"></a>4.2 ChatGPT generated the prompt</h3><p>If you are unsure what’s the best way to ask ChatGPT to generate the response you want, you can ask itself to generate it for you, keep in mind the prompting framework of role, context, input and output.</p>
+<p>For example:</p>
+<pre><code class="yaml">You are a ChatGPT prompt generator, I am a job seeker that want to learn about a company's history, permance and vision along with culture for my upcoming interview. What would you write for the prompt to get an accurate, professional result to input into ChatGPT, please make sure it's in one paragraph so I can copy and paste directly.</code></pre>
+
+<h2 id="V-Appendix"><a href="#V-Appendix" class="headerlink" title="V. Appendix"></a>V. Appendix</h2><p><a target="_blank" rel="noopener" href="https://www.xiaohongshu.com/explore/64cc1cf7000000001701a716">美国找工作技巧:用 ChatGPT 准备面试</a><br><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=pmnY5V16GSE&ab_channel=JeffSu">Land a Job using ChatGPT: The Definitive Guide!</a><br><a target="_blank" rel="noopener" href="https://twitter.com/dotey/status/1655725896366522368">宝玉 on Twitter &#x2F; X</a><br><a target="_blank" rel="noopener" href="https://flowgpt.com/p/mr-frank-mock-interview">Mr. Frank : Mock Interview| FlowGPT</a><br><a target="_blank" rel="noopener" href="https://learningprompt.wiki/zh-Hans/docs/chatGPT/tutorial-extras/zero-shot-prompts">Zero-Shot Prompts | Learning Prompt</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/20230913/" rel="next" title="Ongoing Journey - July 2023">
+                  Ongoing Journey - July 2023 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fas fa-fish"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yize Shen</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+<script src="../lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '32px',
+  right: '32px',
+  left: 'unset',
+  time: '0.5s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#100f2c',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
+
+</body>
+</html>
